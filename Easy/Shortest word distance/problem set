@@ -1,0 +1,39 @@
+problem set:
+
+Given a list of words and two words  - word1 and word2, 
+return the shortest distance between these two words in the list.
+
+
+******************************************************************
+sample test 1 :
+
+input:
+words = ["Practice", "makes", "perfect", "coding", "makes"]
+word1 = makes
+word2 = coding
+
+output:
+1
+
+explanation:
+makes = index[1,4]
+coding = index[3]
+
+minimun = min(abs(1-3),abs(4-3)) = min(2,1) = 1
+
+******************************************************************
+sample test 2 :
+
+input:
+words = ["Practice", "makes", "perfect", "coding", "makes"]
+word1 = Practice
+word2 = coding
+
+output:
+3
+
+explanation:
+Practice = index[0]
+coding = index[3]
+
+minimun = min(abs(0-3)) = 3
